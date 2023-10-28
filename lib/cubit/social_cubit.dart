@@ -356,7 +356,6 @@ class SocialCubit extends Cubit<SocialStates> {
         .get().then((value) {
       value.docs.forEach((element) {
         element.reference.collection('likes').get().then((value) {
-          //value كده انت جواه الايكس خلاص
           noOfLikes.add(value.docs.length);
         }).catchError((error) {
           print(error.toString());
@@ -410,7 +409,6 @@ class SocialCubit extends Cubit<SocialStates> {
         dateTime: dateTime
     );
 
-    //بعتنا الشات بتاعي
     FirebaseFirestore.instance
         .collection('users')
         .doc(userModel!.uId)

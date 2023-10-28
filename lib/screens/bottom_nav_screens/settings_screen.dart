@@ -67,7 +67,7 @@ class SettingsScreen extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Text('100',style: TextStyle(
+                        const Text('100',style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
 
@@ -82,7 +82,7 @@ class SettingsScreen extends StatelessWidget {
                     const Spacer(),
                     Column(
                       children: [
-                        Text('256',style: TextStyle(
+                        const Text('256',style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                         ),),
@@ -96,7 +96,7 @@ class SettingsScreen extends StatelessWidget {
                     const Spacer(),
                     Column(
                       children: [
-                        Text('15K',style: TextStyle(
+                        const Text('15K',style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                         ),),
@@ -110,7 +110,7 @@ class SettingsScreen extends StatelessWidget {
                     const Spacer(),
                     Column(
                       children: [
-                        Text('75',style: TextStyle(
+                        const Text('75',style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                         ),),
@@ -135,7 +135,7 @@ class SettingsScreen extends StatelessWidget {
                      color: defaultColor,
                    ),
                    child: MaterialButton(
-                     onPressed: (){},child: Text('Add Photos',
+                     onPressed: (){},child: const Text('Add Photos',
                      style: TextStyle(
                        color: Colors.white,
                        fontWeight: FontWeight.bold,
